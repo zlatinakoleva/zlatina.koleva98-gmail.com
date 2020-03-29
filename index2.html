@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <script
+      src="https://kit.fontawesome.com/595b3f93fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <div class="navigation">
+          <div class="logo">
+            <p class="modus">MODUS</p>
+            <p class="versus">versus</p>
+          </div>
+          <nav>
+            <ul>
+              <li class="uppercase"><a href="#">Home</a></li>
+              <li class="uppercase"><a href="#">About</a></li>
+              <li class="uppercase"><a href="#">Services</a></li>
+              <li class="uppercase dropdown">
+                <a href="#"><i class="fas fa-chevron-down"></i> Portfolio</a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </li>
+              <li class="uppercase"><a href="#">Blog</a></li>
+              <li class="uppercase"><a href="#">Features</a></li>
+              <li class="uppercase"><a href="#">Contacts</a></li>
+              <li class="search-container">
+                <a class="search show_searchbox" href="javascript:;"
+                  ><i class="fas fa-search"></i
+                ></a>
+                <div class="search-box">
+                  <input type="search" placeholder="Search the site" />
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <img class="path" src="Path.png" alt="" />
+        </div>
+        <div class="current-directory">
+          <p class="uppercase page-name">Features</p>
+          <ul class="directory">
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+          </ul>
+        </div>
+      </header>
+      <div class="body-shell">
+        <div class="gallery-container">
+          <div class="large-gallery-box gallery">
+            <div class="large-image image">
+              <img src="photo1.jpg" alt="" height="700px" width="1170px" />
+            </div>
+            <div class="large-image image">
+              <img src="photo2.jpg" alt="" height="700px" width="1170px" />
+            </div>
+            <div class="large-image image">
+              <img src="photo3.jpg" alt="" height="700px" width="1170px" />
+            </div>
+
+            <div class="move-buttons">
+              <a
+                class="left-button"
+                onclick="plusSlides(-1, 'large-image','large-selector' )"
+              >
+                <i class="fas fa-angle-double-left"></i>
+              </a>
+              <a
+                class="right-button"
+                onclick="plusSlides(1, 'large-image','large-selector' )"
+              >
+                <i class="fas fa-angle-double-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="image-selector large-gallery-box-width ">
+            <span
+              onclick="currentSlide(1,'large-image' ,'large-selector' )"
+              class="large-selector selector"
+            ></span>
+            <span
+              onclick="currentSlide(2,'large-image', 'large-selector' )"
+              class="large-selector selector"
+            ></span>
+            <span
+              onclick="currentSlide(3, 'large-image','large-selector' )"
+              class="large-selector selector"
+            ></span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="gallery-container">
+            <div class="medium-gallery-box gallery">
+              <div class="medium-image image">
+                <img src="photo1.jpg" alt="" height="560px" width="870px" />
+              </div>
+              <div class="medium-image image">
+                <img src="photo2.jpg" alt="" height="560px" width="870px" />
+              </div>
+              <div class="medium-image image">
+                <img src="photo3.jpg" alt="" height="560px" width="870px" />
+              </div>
+              <div class="move-buttons">
+                <a
+                  class="left-button"
+                  onclick="plusSlides(-1, 'medium-image','medium-selector')"
+                >
+                  <i class="fas fa-angle-double-left"></i>
+                </a>
+                <a
+                  class="right-button"
+                  onclick="plusSlides(1, 'medium-image','medium-selector')"
+                >
+                  <i class="fas fa-angle-double-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="image-selector medium-gallery-box-width ">
+              <span
+                onclick="currentSlide(1,'medium-image', 'medium-selector')"
+                class="medium-selector selector"
+              ></span>
+              <span
+                onclick="currentSlide(2,'medium-image', 'medium-selector')"
+                class="medium-selector selector"
+              ></span>
+              <span
+                onclick="currentSlide(3,'medium-image', 'medium-selector')"
+                class="medium-selector selector"
+              ></span>
+            </div>
+          </div>
+          <div class="sidebar">
+            <div class="gallery-container">
+              <div class="small-gallery-box gallery">
+                <div class="small-image image">
+                  <img src="photo1.jpg" alt="" height="200px" width="270px" />
+                </div>
+                <div class="small-image image">
+                  <img src="photo2.jpg" alt="" height="200px" width="270px" />
+                </div>
+                <div class="small-image image">
+                  <img src="photo3.jpg" alt="" height="200px" width="270px" />
+                </div>
+                <div class="move-buttons">
+                  <a
+                    class="left-button"
+                    onclick="plusSlides(-1, 'small-image','small-selector')"
+                  >
+                    <i class="fas fa-angle-double-left"></i>
+                  </a>
+                  <a
+                    class="right-button"
+                    onclick="plusSlides(1, 'small-image','small-selector')"
+                  >
+                    <i class="fas fa-angle-double-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="image-selector small-gallery-box-width ">
+                <span
+                  onclick="currentSlide(1,'small-image','small-selector')"
+                  class="small-selector selector"
+                ></span>
+                <span
+                  onclick="currentSlide(2,'small-image','small-selector')"
+                  class="small-selector selector"
+                ></span>
+                <span
+                  onclick="currentSlide(3,'small-image','small-selector')"
+                  class="small-selector selector"
+                ></span>
+              </div>
+            </div>
+            <div class="sidebar-gallery">
+              <p class="uppercase sidebar-title">Sidebar gallery</p>
+              <div class="album">
+                <img src="photo3.jpg" alt="" height="70px" width="70px" />
+                <img src="photo3.jpg" alt="" height="70px" width="70px" />
+                <img src="photo3.jpg" alt="" height="70px" width="70px" />
+                <img src="photo3.jpg" alt="" height="70px" width="70px" />
+                <img src="photo3.jpg" alt="" height="70px" width="70px" />
+                <img src="photo3.jpg" alt="" height="70px" width="70px" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="articles">
+          <div class="article-container small">
+            <i class="far fa-thumbs-up"></i>
+            <p class="article-title uppercase">Suspendisse</p>
+            <p class="article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id
+              veritatis temporibus alias aut ipsum.
+            </p>
+            <button class="btn btn-position theme-button">read more</button>
+          </div>
+          <div class="article-container small">
+            <i class="fas fa-key"></i>
+            <p class="article-title uppercase">Maecenas</p>
+            <p class="article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id
+              veritatis temporibus alias aut ipsum.
+            </p>
+            <button class="btn btn-position">read more</button>
+          </div>
+          <div class="article-container small">
+            <i class="fab fa-font-awesome-flag"></i>
+            <p class="article-title uppercase">Aliquam</p>
+            <p class="article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id
+              veritatis temporibus alias aut ipsum.
+            </p>
+            <button class="btn btn-position">read more</button>
+          </div>
+          <div class="article-container small">
+            <i class="fas fa-flask"></i>
+            <p class="article-title uppercase">Habitasse</p>
+            <p class="article-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi id
+              veritatis temporibus alias aut ipsum.
+            </p>
+            <button class="btn btn-position">read more</button>
+          </div>
+        </div>
+        <div class="accordion-tab-articles">
+          <div class="large-accordions large">
+            <div class="accordion">
+              <a class="uppercase show__acrordeon " href="javascript:;"
+                >Accordion Title <i class="change fas fa-plus-circle"></i
+              ></a>
+              <p id="link1" class="info-text ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                distinctio autem quidem at. Dolores voluptatum qui sapiente
+                porro in tempora iure quae nulla fugit dolorum.
+              </p>
+            </div>
+            <div class="accordion">
+              <a class="uppercase show__acrordeon" href="javascript:;"
+                >Accordion Title <i class="change fas fa-plus-circle"></i
+              ></a>
+              <p id="link2" class="info-text ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                distinctio autem quidem at. Dolores voluptatum qui sapiente
+                porro in tempora iure quae nulla fugit dolorum.
+              </p>
+            </div>
+            <div class="accordion">
+              <a class="uppercase show__acrordeon " href="javascript:;"
+                >Accordion Title <i class="change fas fa-plus-circle"></i
+              ></a>
+              <p id="link3" class="info-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                distinctio autem quidem at. Dolores voluptatum qui sapiente
+                porro in tempora iure quae nulla fugit dolorum.
+              </p>
+            </div>
+          </div>
+          <div class="small-accordions small">
+            <div class="accordion">
+              <a class="uppercase show__acrordeon" href="javascript:;"
+                >Accordion Title <i class="change fas fa-plus-circle"></i
+              ></a>
+              <p id="link4" class="info-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit..
+              </p>
+            </div>
+            <div class="accordion">
+              <a class="uppercase show__acrordeon" href="javascript:;"
+                >Accordion Title <i class="change fas fa-plus-circle"></i
+              ></a>
+              <p id="link5" class="info-text ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit..
+              </p>
+            </div>
+            <div class="accordion">
+              <a class="uppercase show__acrordeon" href="javascript:;"
+                >Accordion Title <i class="change fas fa-plus-circle"></i
+              ></a>
+              <p id="link6" class="info-text ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit..
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-tab-articles">
+          <div class="large ">
+            <ul class="tab-container tab-large ">
+              <li
+                data-tab="tab-1"
+                href="javascript:;"
+                class="tab current uppercase"
+              >
+                Tab title
+              </li>
+              <li data-tab="tab-2" href="javascript:;" class="tab uppercase">
+                Tab title
+              </li>
+              <li data-tab="tab-3" href="javascript:;" class="tab uppercase">
+                Tab title
+              </li>
+              <li data-tab="tab-4" href="javascript:;" class="tab uppercase">
+                Tab title
+              </li>
+            </ul>
+            <!-- <div class="text-container"> -->
+            <div id="tab-1" class="paragraph current info-text ">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                voluptatum, quisquam aliquid ab nam expedita molestiae iste cum
+                repudiandae iusto ratione facilis? Quos ab facilis, iste
+                voluptas fugit optio, minus ex, culpa dolore sunt sit. Magni
+                dicta ex fugit debitis? Quos ab facilis, iste voluptas fugit
+                optio, minus ex, culpa dolore sunt sit. Magni dicta ex fugit
+                debitis?
+              </p>
+              <img src="photo3.jpg" alt="" />
+            </div>
+            <div id="tab-2" class="paragraph info-text ">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                voluptatum, quisquam aliquid ab nam expedita molestiae iste cum
+                repudiandae iusto ratione facilis? Quos ab facilis, iste
+                voluptas fugit optio, minus ex, culpa dolore sunt sit. Magni
+                dicta ex fugit debitis? Quos ab facilis, iste voluptas fugit
+                optio, minus ex, culpa dolore sunt sit. Magni dicta ex fugit
+                debitis?
+              </p>
+              <img src="photo2.jpg" alt="" />
+            </div>
+            <div id="tab-3" class="paragraph info-text ">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                voluptatum, quisquam aliquid ab nam expedita molestiae iste cum
+                repudiandae iusto ratione facilis? Quos ab facilis, iste
+                voluptas fugit optio, minus ex, culpa dolore sunt sit. Magni
+                dicta ex fugit debitis? Quos ab facilis, iste voluptas fugit
+                optio, minus ex, culpa dolore sunt sit. Magni dicta ex fugit
+                debitis?
+              </p>
+              <img src="photo1.jpg" alt="" />
+            </div>
+            <div id="tab-4" class="paragraph info-text ">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                voluptatum, quisquam aliquid ab nam expedita molestiae iste cum
+                repudiandae iusto ratione facilis? Quos ab facilis, iste
+                voluptas fugit optio, minus ex, culpa dolore sunt sit. Magni
+                dicta ex fugit debitis? Quos ab facilis, iste voluptas fugit
+                optio, minus ex, culpa dolore sunt sit. Magni dicta ex fugit
+                debitis?
+              </p>
+              <img src="photo2.jpg" alt="" />
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="small ">
+            <ul class="tab-container tab-small ">
+              <li
+                data-tab="small-tab-1"
+                href="javascript:;"
+                class="tab current uppercase"
+              >
+                Tab title
+              </li>
+              <li
+                data-tab="small-tab-2"
+                href="javascript:;"
+                class="tab uppercase"
+              >
+                Tab title
+              </li>
+            </ul>
+            <!-- <div class="small-text-container"> -->
+            <div id="small-tab-1" class="paragraph current-small info-text ">
+              <p>
+                Test Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quae voluptatum, quisquam aliquid ab nam expedita.
+              </p>
+            </div>
+            <div id="small-tab-2" class="paragraph info-text ">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                voluptatum, quisquam aliquid ab nam expedita wiga ab nam.
+              </p>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="page-images">
+          <div class="display image-link">
+            <a href="javascript:;">
+              <img class="small-img" src="photo1.jpg" alt="" />
+            </a>
+            <div class="display link-box small-img">
+              <div class="links">
+                <i class="far fa-eye"></i>
+                <i class="fas fa-link"></i>
+              </div>
+              <p>Lorem ipsum dolor</p>
+            </div>
+          </div>
+          <div class="display image-link">
+            <a href="javascript:;">
+              <img class="small-img" src="photo1.jpg" alt="" />
+            </a>
+            <div class="display link-box small-img">
+              <div class="links">
+                <i class="far fa-eye"></i>
+                <i class="fas fa-link"></i>
+              </div>
+              <p>Lorem ipsum dolor</p>
+            </div>
+          </div>
+          <div class="display image-link">
+            <a href="javascript:;" class="display"
+              ><img class="small-img" src="photo1.jpg" alt=""
+            /></a>
+            <div class="link-box small-img">
+              <div class="links">
+                <i class="far fa-eye"></i>
+                <i class="fas fa-link"></i>
+              </div>
+              <p>Lorem ipsum dolor</p>
+            </div>
+          </div>
+          <div class="display image-link">
+            <a href="javascript:;" class="display"
+              ><img class="small-img" src="photo1.jpg" alt=""
+            /></a>
+            <div class="link-box small-img">
+              <div class="links">
+                <i class="far fa-eye"></i>
+                <i class="fas fa-link"></i>
+              </div>
+              <p>Lorem ipsum dolor</p>
+            </div>
+          </div>
+          <div class="display image-link">
+            <a href="javascript:;" class="display"
+              ><img class="large-img" src="photo2.jpg" alt=""
+            /></a>
+            <div class="link-box large-img">
+              <div class="links">
+                <i class="far fa-eye"></i>
+                <i class="fas fa-link"></i>
+              </div>
+              <p>Lorem ipsum dolor</p>
+            </div>
+          </div>
+          <div class="display image-link">
+            <a href="javascript:;" class="display"
+              ><img class="large-img" src="photo2.jpg" alt=""
+            /></a>
+            <div class="link-box large-img">
+              <div class="links">
+                <i class="far fa-eye"></i>
+                <i class="fas fa-link"></i>
+              </div>
+              <p>Lorem ipsum dolor</p>
+            </div>
+          </div>
+          <div class="info-grid-container">
+            <div class="line-container">
+              <div class="line-box">
+                <p class="bold info-title">Headline</p>
+                <p class="text-box">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae! Rerum vitae, eum omnis quos ipsa obcaecati? Facere
+                  quod ipsa aliquam maiores alias laborum beatae officia omnis
+                  libero, quibusdam ipsum porro reprehenderit, tempore
+                  cupiditate modi nostrum perferendis sint.
+                </p>
+              </div>
+            </div>
+            <div class="line-container">
+              <div class="line-box">
+                <p class="bold info-title">Headline</p>
+                <p class="text-box">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae! Rerum vitae, eum omnis quos ipsa obcaecati?
+                </p>
+              </div>
+              <div class="line-box">
+                <p class="bold info-title">Headline</p>
+                <p class="text-box">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae! Rerum vitae, eum omnis quos ipsa obcaecati?
+                </p>
+              </div>
+            </div>
+            <div class="line-container">
+              <div class="line-box large">
+                <p class="bold info-title large">Headline</p>
+                <p class="text-box large">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae! Rerum vitae, eum omnis quos ipsa obcaecati?Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae! Rerum vitae, eum omnis quos ipsa obcaecati?
+                </p>
+              </div>
+              <div class="line-box small">
+                <p class="bold info-title small">Headline</p>
+                <p class="text-box small">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae!officiis illum quae!
+                </p>
+              </div>
+            </div>
+            <div class="line-container">
+              <div class="line-box small">
+                <p class="bold info-title">Headline</p>
+                <p class="text-box">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae! Rerum vitae, eum omnis quos ipsa obcaecati?
+                </p>
+              </div>
+              <div class="line-box small">
+                <p class="bold info-title ">Headline</p>
+                <p class="text-box ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae! Rerum vitae, eum omnis quos ipsa obcaecati?
+                </p>
+              </div>
+              <div class="line-box small">
+                <p class="bold info-title ">Headline</p>
+                <p class="text-box ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae! Rerum vitae, eum omnis quos ipsa obcaecati?
+                </p>
+              </div>
+              <div class="line-box small">
+                <p class="bold info-title ">Headline</p>
+                <p class="text-box ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  dolorum sint libero aliquid corporis exercitationem officiis
+                  illum quae! Rerum vitae, eum omnis quos ipsa obcaecati?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="line-container lists-container">
+            <div class="list small">
+              <p class="bold info-title small ">Arrow list font size 13px</p>
+              <ul class="font-smaller">
+                <li>
+                  <i class="fas fa-arrow-right"></i> Lorem ipsum dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-arrow-right"></i> Lorem ipsum dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-arrow-right"></i> Lorem ipsum dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-arrow-right"></i> Lorem ipsum dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-arrow-right"></i> Lorem ipsum dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-arrow-right"></i> Lorem ipsum dolor sit.
+                </li>
+              </ul>
+            </div>
+            <div class="list small">
+              <p class="bold info-title small">Arrow list font size 14px</p>
+              <ul>
+                <li><i class="fas fa-times"></i> Lorem ipsum dolor sit.</li>
+                <li><i class="fas fa-times"></i> Lorem ipsum dolor sit.</li>
+                <li><i class="fas fa-times"></i> Lorem ipsum dolor sit.</li>
+                <li><i class="fas fa-times"></i> Lorem ipsum dolor sit.</li>
+                <li><i class="fas fa-times"></i> Lorem ipsum dolor sit.</li>
+                <li><i class="fas fa-times"></i> Lorem ipsum dolor sit.</li>
+              </ul>
+            </div>
+            <div class="list small">
+              <p class="bold info-title small">Arrow list font size 14px</p>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+              </ul>
+            </div>
+            <div class="list small">
+              <p class="bold info-title small">Arrow list font size 14px</p>
+              <ul>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+                <li>
+                  <i class="fas fa-chevron-circle-right blue"></i> Lorem ipsum
+                  dolor sit.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="view-more">
+            <div class="text-box">
+              <p class="bold info-title">Headline</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor
+                sit amet consectetur adipisicing elit
+              </p>
+            </div>
+
+            <button class="btn uppercase view-more-btn bold">
+              view more
+            </button>
+          </div>
+          <table>
+            <tr>
+              <th>TR Title</th>
+              <th>TR Title</th>
+              <th>TR Title</th>
+              <th>TR Title</th>
+            </tr>
+            <tr>
+              <td>Lorem</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                autem.
+              </td>
+              <td>Lorem ipsum dolor sit.</td>
+            </tr>
+            <tr>
+              <td>Lorem</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                autem.
+              </td>
+              <td>Lorem ipsum dolor sit.</td>
+            </tr>
+            <tr>
+              <td>Lorem</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                autem.
+              </td>
+              <td>Lorem ipsum dolor sit.</td>
+            </tr>
+            <tr>
+              <td>Lorem</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                autem.
+              </td>
+              <td>Lorem ipsum dolor sit.</td>
+            </tr>
+          </table>
+
+          <div class="tables">
+            <div class="table blue-table">
+              <table>
+                <tr>
+                  <th>TR Title</th>
+                  <th>TR Title</th>
+                  <th>TR Title</th>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="table red-table">
+              <table>
+                <tr>
+                  <th>TR Title</th>
+                  <th>TR Title</th>
+                  <th>TR Title</th>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+                <tr>
+                  <td>Lorem</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                  <td>Lorem ipsum dolor sit.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <img class="path-footer" src="Pathfooter.png" alt="" />
+        <div class="site-info">
+          <div class="footer-container side-container">
+            <div class="logo">
+              <p class="modus">MODUS</p>
+              <p class="versus">versus</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+              molestias nobis labore assumenda, minima doloribus atque possimus
+              illo ut repellat, aliquid rem enim! Aliquam fuga non maxime hic
+              pariatur iusto!
+            </p>
+            <p>
+              Phone: <span>182 2569 5896</span> <br />e-mail:
+              <span>info@modus.versus</span>
+            </p>
+          </div>
+          <div class="footer-container inner-container">
+            <p class="footer-title">Company</p>
+            <ul>
+              <li><i class="fas fa-angle-right"></i>About</li>
+              <li><i class="fas fa-angle-right"></i>FAQ</li>
+              <li><i class="fas fa-angle-right"></i>Contact</li>
+              <li><i class="fas fa-angle-right"></i>Terms</li>
+              <li><i class="fas fa-angle-right"></i>Privacy</li>
+              <li><i class="fas fa-angle-right"></i>Testimonials</li>
+            </ul>
+          </div>
+          <div class="footer-container inner-container">
+            <p class="footer-title">Community</p>
+            <ul>
+              <li><i class="fas fa-angle-right"></i>About</li>
+              <li><i class="fas fa-angle-right"></i>FAQ</li>
+              <li><i class="fas fa-angle-right"></i>Contact</li>
+              <li><i class="fas fa-angle-right"></i>Terms</li>
+            </ul>
+          </div>
+          <div class="blog-container side-container">
+            <p class="footer-title-blog">
+              from the <span class="uppercase bold">blog</span>
+            </p>
+            <div class="footer-photos">
+              <img src="photo3.jpg" alt="" />
+              <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="date">26 May,2013</p>
+              </div>
+            </div>
+            <div class="footer-photos">
+              <img src="photo3.jpg" alt="" />
+              <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="date">26 May,2013</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyrights">
+          <div class="copyrights-info">
+            <p>Copyright &copy; 2020 John Smith</p>
+          </div>
+          <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-tumblr"></i>
+            <i class="fas fa-rss"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
